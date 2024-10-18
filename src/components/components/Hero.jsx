@@ -13,7 +13,16 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-violet-500" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>Andrei</h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            i am developer, software, fulstak,{" "}
+            <br className="sm:block hidden" />
+            frontending, the back.
+          </p>
+        </div>
       </div>
+      <ComputersCanvas />
     </section>
   );
 };
