@@ -20,7 +20,7 @@ const App = () => {
           <Hero />
         </div>
         <SectionWrapper Component={About} idName="about" />
-        <Experience />
+        <SectionWrapper Component={Experience} idName="experience" />
         <Tech />
         <Works />
         <Feedbacks />
