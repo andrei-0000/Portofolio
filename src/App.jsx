@@ -9,6 +9,7 @@ import {
   Works,
   Feedbacks,
 } from "./components/components";
+import { SectionWrapper } from "./hoc";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
+        <SectionWrapper Component={About} idName="about" />
         <Experience />
         <Tech />
         <Works />
