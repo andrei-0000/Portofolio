@@ -20,8 +20,8 @@ const App = () => {
           <Hero />
         </div>
         <SectionWrapper Component={About} idName="about" />
-        <SectionWrapper Component={Experience} idName="experience" />
-        <Tech />
+        <SectionWrapper Component={Experience} idName="work" />
+        <SectionWrapper Component={Tech} idName="tech" />
         <Works />
         <Feedbacks />
       </div>
