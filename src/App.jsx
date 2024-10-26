@@ -22,7 +22,7 @@ const App = () => {
         <SectionWrapper Component={About} idName="about" />
         <SectionWrapper Component={Experience} idName="work" />
         <SectionWrapper Component={Tech} idName="tech" />
-        <Works />
+        <SectionWrapper Component={Works} idName="works" />
         <Feedbacks />
       </div>
     </BrowserRouter>
