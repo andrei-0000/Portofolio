@@ -8,6 +8,7 @@ import {
   Tech,
   Works,
   Feedbacks,
+  Contact,
 } from "./components/components";
 import { SectionWrapper } from "./hoc";
 
@@ -23,6 +24,7 @@ const App = () => {
         <SectionWrapper Component={Experience} idName="work" />
         <SectionWrapper Component={Tech} idName="tech" />
         <SectionWrapper Component={Works} idName="works" />
+        <SectionWrapper Component={Contact} idName="contact" />
         <Feedbacks />
       </div>
     </BrowserRouter>
