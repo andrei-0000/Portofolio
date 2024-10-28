@@ -4,8 +4,11 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../../styles";
 import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
+
+//template_0ea4ojf
+//service_rfa0hoc
+//ImITE3UAi8kbLPSGd
 
 const Contact = () => {
   const formRef = useRef();
@@ -18,8 +21,43 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_rfa0hoc",
+        "template_0ea4ojf",
+        {
+          from_name: form.name,
+          to_name: "Andrei",
+          from_email: form.email,
+          to_email: "1andreiconstantinpopa@gmail.com",
+          message: form.message,
+        },
+        "ImITE3UAi8kbLPSGd"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Your message has been sent. Thank you!");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("something went wrong");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 flex xl:flex-row overflow-hidden flex-col-reverse gap-10">
