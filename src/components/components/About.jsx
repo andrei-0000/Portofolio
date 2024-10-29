@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-primary opacity-90 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
@@ -42,16 +42,10 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-        elementum est at imperdiet lobortis. Nulla bibendum feugiat libero id
-        vehicula. Mauris ultrices dui vitae nunc accumsan, feugiat venenatis
-        velit ornare. Proin vitae neque elit. In a pellentesque tortor. Sed
-        vestibulum massa metus, tristique lacinia sem auctor convallis. Morbi
-        sed rutrum ex. Nulla aliquam id ante sit amet lobortis. Pellentesque
-        vitae felis in felis suscipit condimentum. Mauris et odio pellentesque,
-        aliquet leo vitae, tempor ante. Morbi pellentesque vestibulum ligula,
-        mollis facilisis enim rutrum ut. Aenean iaculis lorem a mollis iaculis.
-        Fusce posuere commodo arcu ac eleifend. Aliquam blandit felis felis.
+        Graduated in July 2024 in Computer Engineering at Universitat
+        Politècnica de Catalunya, I am a Software Engineer dedicated to both
+        frontend and backend. I am patient, a fast learner, and always on the
+        lookout for fun new technologies and projects.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
