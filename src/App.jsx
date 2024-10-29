@@ -17,7 +17,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="">
           <Navbar />
           <Hero />
         </div>
@@ -27,8 +27,8 @@ const App = () => {
         <SectionWrapper Component={Works} idName="works" />
         <div className="relative z-0">
           <SectionWrapper Component={Contact} idName="contact" />
-          <StarsCanvas />
         </div>
+        <StarsCanvas />
       </div>
     </BrowserRouter>
   );
