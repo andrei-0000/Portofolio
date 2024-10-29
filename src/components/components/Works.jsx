@@ -24,7 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-primary outline-double p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -73,14 +73,10 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          elementum est at imperdiet lobortis. Nulla bibendum feugiat libero id
-          vehicula. Mauris ultrices dui vitae nunc accumsan, feugiat venenatis
-          velit ornare. Proin vitae neque elit. In a pellentesque tortor. Sed
-          vestibulum massa metus, tristique lacinia sem auctor convallis. Morbi
-          sed rutrum ex. Nulla aliquam id ante sit amet lobortis. Pellentesque
-          vitae felis in felis suscipit condimentum. Mauris et odio
-          pellentesque, aliquet leo vitae, tempo
+          Here I showcase the skills and experience I have acquired through
+          examples of my work and projects. Each one is briefly described, with
+          the Github repository link available for inspection. The technologies
+          used for each project are also listed
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

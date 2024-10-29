@@ -33,6 +33,9 @@ import socialpoint from "./company/socialpoint.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import portofolio from "./portofolio.png";
+import gymios from "./gymios.png";
+import colorgame from "./colorgame.png";
 
 export {
   logoAndrei,
@@ -67,4 +70,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  portofolio,
+  gymios,
+  colorgame,
 };

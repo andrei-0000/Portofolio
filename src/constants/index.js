@@ -25,6 +25,9 @@ import {
   shopify,
   carrent,
   jobit,
+  colorgame,
+  gymios,
+  portofolio,
   tripguide,
   threejs,
 } from "../assets/assets";
@@ -105,10 +108,6 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -179,67 +178,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Color Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Simple and easy game created with React in order to first test it and its hooks.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "orange-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: colorgame,
+    source_code_link: "https://github.com/andrei-0000/react-colors-game",
   },
   {
-    name: "Job IT",
+    name: "Gym IOS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mobile Application made with React Native that aims to provide a swift, clean and cool gym tracking experience.",
     tags: [
       {
-        name: "react",
+        name: "react native",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "zustand",
         color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "expo",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: gymios,
+    source_code_link: "https://github.com/andrei-0000/GymIOS",
+  },
+  {
+    name: "This Website",
+    description:
+      "This website was made also as a means of learning React Three, practice Tailwind, and the other technologies involved in it. Made with the inspiration of JSMastery's portofolio",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "three",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portofolio,
+    source_code_link: "https://github.com/andrei-0000/Portofolio",
   },
 ];
 
