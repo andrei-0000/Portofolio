@@ -18,9 +18,16 @@ import {
   meta,
   starbucks,
   tesla,
+  aws,
+  java,
+  socialpoint,
+  ocado,
   shopify,
   carrent,
   jobit,
+  colorgame,
+  gymios,
+  portofolio,
   tripguide,
   threejs,
 } from "../assets/assets";
@@ -81,6 +88,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -91,14 +106,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -116,55 +123,28 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Engineer Apprentice",
+    company_name: "Ocado Technology",
+    icon: ocado,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "October 2022 - February 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Interned in a team that works with a micro-service based platform.",
+      "Given different tasks and tickets, I had to work on a solution, test it, review it, and deploy it.",
+      "Worked on both front end (React) and back end (Java, Spring Boot).",
+      "Participated in the team using Agile methodology.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Fullstack Developer Internship",
+    company_name: "Socialpoint | Take-Two Interactive",
+    icon: socialpoint,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 - May 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Improved different tools that are used for game development & user/game support, as well as adding new functionalities and creating new ones, improving the experience for game developers, QAs and customer supports.",
+      "Worked on both frontend and backend, designed & created UIs, improvedexisting endpoints and created new endpoints and functionalities, worked with external APIs. Applied testing on both ends.",
+      "Participated in a team that uses sprints & agile methodology.",
     ],
   },
 ];
@@ -198,67 +178,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Color Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Simple and easy game created with React in order to first test it and its hooks.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "javascript",
+        color: "orange-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: colorgame,
+    source_code_link: "https://github.com/andrei-0000/react-colors-game",
   },
   {
-    name: "Job IT",
+    name: "Gym IOS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mobile Application made with React Native that aims to provide a swift, clean and cool gym tracking experience.",
     tags: [
       {
-        name: "react",
+        name: "react native",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "zustand",
         color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "expo",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: gymios,
+    source_code_link: "https://github.com/andrei-0000/GymIOS",
+  },
+  {
+    name: "This Website",
+    description:
+      "This website was made also as a means of learning React Three, practice Tailwind, and the other technologies involved in it. Made with the inspiration of JSMastery's portofolio",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "three",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portofolio,
+    source_code_link: "https://github.com/andrei-0000/Portofolio",
   },
 ];
 

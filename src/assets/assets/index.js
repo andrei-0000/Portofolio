@@ -20,15 +20,22 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import java from "./tech/java.jpg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import ocado from "./company/ocado.jpg";
+import socialpoint from "./company/socialpoint.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import portofolio from "./portofolio.png";
+import gymios from "./gymios.png";
+import colorgame from "./colorgame.png";
 
 export {
   logoAndrei,
@@ -54,9 +61,16 @@ export {
   threejs,
   meta,
   shopify,
+  ocado,
+  socialpoint,
+  aws,
+  java,
   starbucks,
   tesla,
   carrent,
   jobit,
   tripguide,
+  portofolio,
+  gymios,
+  colorgame,
 };
