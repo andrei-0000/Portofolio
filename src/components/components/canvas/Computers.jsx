@@ -1,29 +1,47 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import Loader from "../Loader";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import {
+  Environment,
+  OrbitControls,
+  Preload,
+  useGLTF,
+} from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./public/desktop_pc/scene.gltf");
+  const { nodes, materials } = useGLTF("./public/logoap/logoap7.glb");
+  const ref = useRef();
+  const refLight = useRef();
+
+  useFrame((state, delta) => {
+    ref.current.rotation.z -= delta / 1;
+  });
+
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+    <group dispose={null}>
+      <hemisphereLight intensity={40} groundColor="black" />
       <pointLight intensity={1} />
       <spotLight
-        position={[-20, 50, 10]}
+        ref={refLight}
+        position={[20, 0, 10]}
         penumbra={1}
-        intensity={7000}
+        intensity={1}
         castShadow
         shadow-mapSize={1024}
       />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [-0, -2.25, -1.5] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Torus.geometry}
+        material={materials.Material2}
+        material-roughness={0.1}
+        material-metallic={0.9}
+        scale={isMobile ? 0.65 : 1}
+        position={isMobile ? [-0, -0.75, 0] : [0, -0.65, 0]}
+        rotation={[1.5, 0, -1]}
+        ref={ref}
       />
-    </mesh>
+    </group>
   );
 };
 
@@ -48,10 +66,10 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [8, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -60,6 +78,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
+        <Environment files={"./public/hdr/city.hdr"} background={false} />
         <Computers isMobile={isMobile} />
       </Suspense>
 
