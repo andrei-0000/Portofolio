@@ -18,6 +18,10 @@ import {
   meta,
   starbucks,
   tesla,
+  aws,
+  java,
+  socialpoint,
+  ocado,
   shopify,
   carrent,
   jobit,
@@ -81,6 +85,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -91,10 +103,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -116,55 +124,28 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Engineer Apprentice",
+    company_name: "Ocado Technology",
+    icon: ocado,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "October 2022 - February 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Interned in a team that works with a micro-service based platform.",
+      "Given different tasks and tickets, I had to work on a solution, test it, review it, and deploy it.",
+      "Worked on both front end (React) and back end (Java, Spring Boot).",
+      "Participated in the team using Agile methodology.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Fullstack Developer Internship",
+    company_name: "Socialpoint | Take-Two Interactive",
+    icon: socialpoint,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 - May 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Improved different tools that are used for game development & user/game support, as well as adding new functionalities and creating new ones, improving the experience for game developers, QAs and customer supports.",
+      "Worked on both frontend and backend, designed & created UIs, improvedexisting endpoints and created new endpoints and functionalities, worked with external APIs. Applied testing on both ends.",
+      "Participated in a team that uses sprints & agile methodology.",
     ],
   },
 ];
