@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles";
 import { navLinks } from "../../constants";
-import { logoAndrei, menu, close } from "../../assets/assets";
+import { logoAndrei, menu, close, github, linkedin } from "../../assets/assets";
+
+const linkedinUrl =
+  "https://www.linkedin.com/in/andrei-constantin-popa-39a792193/";
+const githubUrl = "https://github.com/andrei-0000";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -23,8 +27,15 @@ const Navbar = () => {
           <img src={logoAndrei} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] cursor-pointer flex">
             Andrei Popa &nbsp;
-            <span className="sm:block hidden"> | Software Engineer</span>
+            <span> | &nbsp;</span>
+            <span className="sm:block hidden">Software Engineer</span>
           </p>
+          <div className="" onClick={() => window.open(githubUrl, "_blank")}>
+            <img src={github} className="w-[28px] h-[28px]" alt="github" />
+          </div>
+          <div className="" onClick={() => window.open(linkedinUrl, "_blank")}>
+            <img src={linkedin} className="w-[28px] h-[28px]" alt="github" />
+          </div>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
