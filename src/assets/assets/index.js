@@ -37,6 +37,7 @@ import tripguide from "./tripguide.png";
 import portofolio from "./portofolio.png";
 import gymios from "./gymios.png";
 import colorgame from "./colorgame.png";
+import videogame from "./videogame.png";
 
 export {
   logoAndrei,
@@ -68,6 +69,7 @@ export {
   aws,
   java,
   starbucks,
+  videogame,
   tesla,
   carrent,
   jobit,

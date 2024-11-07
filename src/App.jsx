@@ -9,6 +9,7 @@ import {
   Works,
   Contact,
   StarsCanvas,
+  OtherWorks,
 } from "./components/components";
 import { SectionWrapper } from "./hoc";
 import { Stars } from "@react-three/drei";
@@ -25,6 +26,7 @@ const App = () => {
         <SectionWrapper Component={Experience} idName="work" />
         <SectionWrapper Component={Tech} idName="tech" />
         <SectionWrapper Component={Works} idName="works" />
+        <SectionWrapper Component={OtherWorks} idName="other-works" />
         <div className="relative z-0">
           <SectionWrapper Component={Contact} idName="contact" />
         </div>

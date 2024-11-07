@@ -26,6 +26,7 @@ import {
   carrent,
   jobit,
   colorgame,
+  videogame,
   gymios,
   portofolio,
   tripguide,
@@ -242,4 +243,31 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const otherProjects = [
+  {
+    name: "3D Game",
+    description:
+      "3D Runner style game developed in 1 month as a class project.",
+    tags: [
+      {
+        name: "unity",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "c-sharp",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: videogame,
+    source_code_link: "https://github.com/andrei-0000/3DGame",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  otherProjects,
+};
